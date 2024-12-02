@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Page Background for Welcome Page */
+body.welcome-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Welcome Container */
+.welcome-container {
+    text-align: center;
+    background-color: #64b5f6;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+}
+
+.welcome-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.welcome-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.welcome-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design for Welcome Page */
+@media (max-width: 600px) {
+    .welcome-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .welcome-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-container p {
+        font-size: 1rem;
+    }
+}
+
+/* General Styling for Forms */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container button {
+    width: auto;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message, .success-message, .pass-message {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+.pass-message {
+    color: red;
+}
+
+body.error-page {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+}
+
+/* Error Container */
+.error-container {
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Titles */
+.error-container h1 {
+    font-size: 5rem;
+    color: #d9534f;
+}
+
+.error-container h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #5a5a5a;
+}
+
+.error-container p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #6c757d;
+}
+
+/* Action Button */
+.error-container .error-action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.error-container .error-action-button:hover {
+    background-color: #0056b3;
+}
